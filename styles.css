@@ -1,0 +1,55 @@
+* {
+    font-family: arial;
+}
+
+body {
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.column {
+    margin: 0;
+}
+
+#characters {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+p::hover {
+    margin: 0;
+}
+
+a[target = href] {
+    margin: 0;
+}
+
+li > a {
+    margin: 0;
+}
+
+audio, video {
+    margin: 0;
+}
+
+header > h2 {
+    margin: 0;
+}
+
+header + h2 {
+    margin: 0;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+p.intro {
+    margin: 0;
+}
