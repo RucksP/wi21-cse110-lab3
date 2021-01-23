@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohan's Userpage</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
+
+<style>
+    p.intro {
+    text-decoration: underline;
+    text-align: center;
+    margin: auto;
+}
+</style>
 
 <body>
 
-    <nav>
+    <nav id = "top">
         <a href="https://www.google.com/">Github</a> |
         <a href="https://www.google.com/">LinkedIn</a> |
     </nav> 
@@ -30,19 +40,19 @@
         </pre>
 
         
-        <div class="row">
-            <picture>
+        <div class="flex-container">
+            <div>
+                <picture>
                 <source media="(min-width:650px)" srcset="SSBM.png">
                 <img src="Dreamland.png" alt="SSBM"> 
-            </picture>
-            
+                </picture>
+            </div>
 
-            <div class="column">
-                
+            <div>
                     <fieldset style="display:block">
                         <legend><strong>Characters in SSBM</strong></legend>
                         <ul id = "characters">
-                            <li>|------------- <span style="color:cyan;font-weight:bold">High Tier</span> -------------|</li>
+                            <li>|------------- <span style="color:#00FFFF;font-weight:bold">High Tier</span> -------------|</li>
                             <li><a href = "https://www.google.com/"> Captain Falcon</a></li>
                             <li><a href = "https://www.google.com/"> Falco</a></li>
                             <li><a href = "https://www.google.com/"> Fox</a></li>
@@ -51,14 +61,14 @@
                             <li><a href = "https://www.google.com/"> Peach</a></li>
                             <li><a href = "https://www.google.com/"> Pikachu</a></li>
                             <li><a href = "https://www.google.com/"> Sheik</a></li>
-                            <li>|------------- <span style="color:blue;font-weight:bold">Mid Tier</span> -------------|</li>
+                            <li>|------------- <span style="color:rgb(0,0,255);font-weight:bold">Mid Tier</span> -------------|</li>
                             <li><a href = "https://www.google.com/">Dr. Mario</a></li>
                             <li><a href = "https://www.google.com/">Ganondorf</a></li>
                             <li><a href = "https://www.google.com/">Ice Climbers</a></li>
                             <li><a href = "https://www.google.com/">Luigi</a></li>
                             <li><a href = "https://www.google.com/">Samus</a></li>
                             <li><a href = "https://www.google.com/">Yoshi</a></li>
-                            <li>|------------- <span style="color:firebrick;font-weight:bold">Low Tier</span> -------------|</li>
+                            <li>|------------- <span style="color:rgba(172,34,34,1);font-weight:bold">Low Tier</span> -------------|</li>
                             <li><a href = "https://www.google.com/">Bowser</a></li>
                             <li><a href = "https://www.google.com/">Donkey Kong</a></li>
                             <li><a href = "https://www.google.com/">Link</a></li>
@@ -74,49 +84,63 @@
         
                         </ul>
                         </fieldset>
-            </div>
+                    </div>
+
+                    <div>
+                        <figure>
+                            <img src="Dreamland.png" alt="SSBM" style="width:20vw; height:40vh;">
+                            <figcaption>Hey look at this figure</figcaption>
+                        </figure> 
+                    </div>
+
+
+
+
             </div>
 
+
+            <div class = "grid-container">
+                <div class="grid1">
+                    <h3>My favorite Sound</h3>
+                    <audio controls>
+                        <source src="menu-ok.wav" type="audio/wav">
+                        Your browser does not support the audio tag.
+                    </audio> 
+                </div>
+                <div class="grid2">
+                    <h3>Here is a really cool clip of this game</h3>
+                    <video width="600" height="400" controls>
+                        <source src="AT-cm 1004798102.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video> 
+                </div>
+                <div class="grid3">
+                    <article>
+                        <header>
+                        <h2>A Small <em>Haiku</em></h2>
+                        </header>
             
-            <figure>
-                <img src="Dreamland.png" alt="SSBM" style="width:40%; height:10%;">
-                <figcaption>Hey look at this figure</figcaption>
-            </figure> 
+                        <p>A Little Haiku</p>
+                        <p>To Prove I Can Use Headers</p>
+                        <p>By Rohan Patel</p>
+                
+                        <aside>
+                            <h3>Did You Know?</h3>
+                            <p>Haiku's must follow the 5-7-5 syllable format</p>
+                        </aside>
+                    </article> 
+                </div>
+            </div>
 
-            <h3>My favorite Sound</h3>
-            <audio controls>
-                <source src="menu-ok.wav" type="audio/wav">
-                Your browser does not support the audio tag.
-            </audio> 
 
-            <h3>Here is a really cool clip of this game</h3>
-            <video width="600" height="400" controls>
-                <source src="AT-cm 1004798102.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video> 
+
+
 
         </section>
 
 
     </main>
 
-
-    <section>
-        <hr>
-        <article>
-            <header>
-              <h2>A Small <em>Haiku</em></h2>
-            </header>
-            <p>A Little Haiku</p>
-            <p>To Prove I Can Use Headers</p>
-            <p>By Rohan Patel</p>
-    
-            <aside>
-                <h3>Did You Know?</h3>
-                <p>Haiku's must follow the 5-7-5 syllable format</p>
-            </aside>
-        </article> 
-    </section>
 
     <section>
         <hr>
@@ -134,7 +158,7 @@
         <caption>Example Table</caption>
         <colgroup>
           <col span="2" style="background-color:red">
-          <col style="background-color:yellow">
+          <col style="background-color:#FF0">
         </colgroup>
         <tr>
           <th>Name</th>
@@ -207,7 +231,7 @@
     <details>
         <summary>The Form</summary>
 
-    <form action = "add.php" name = "upload" method = "post" style="padding-left:1%">
+    <form action = "add.php" name = "upload" method = "post" style="padding:2% 2% 2% 2%">
         <fieldset>
                   Skin Name <input type="text" name="title" required> No Single or Double Quotes<br>
                   
@@ -266,7 +290,7 @@
                   Thumbnail Image Link <input type="url" name="img_0" required> <a href ="https://imgur.com/upload">Imgur</a> Recommended<br>
                   Image Album <input type="url" name="img_other"> (Optional) Imgur Album Recomended<br>
                   Author <input type="text" name="uploader"> (Optional)<br>
-                  Description (Optional)<br ><textarea name="description" style="width: 450px; height: 80px; margin:8px 0"></textarea><br>
+                  Description (Optional)<br ><textarea name="description" style="width: 450px; height: 80px; margin:2mm 0"></textarea><br>
                   <input type="submit"><br>
                   <label><b>I will add more input types to the original form to fulfill assignment requirements</b></label><br>
                   Color <input type="color"><br>
@@ -285,9 +309,9 @@
   <footer>
     <h3> Goals </h3>
     <ol>
-        <li>Learn to Code</li>
-        <li> Make Cool Stuff</li>
-        <li> World Domination</li>
+        <li style = "color:hsl(230, 0%, 46%)">Learn to Code</li>
+        <li style = "color:hsl(230, 0%, 46%)"> Make Cool Stuff</li>
+        <li style = "color:hsla(230, 0%, 46%, 0.2)"> World Domination</li>
     </ol>
     <p>Author: Me</p>
   </footer>
