@@ -1,55 +1,125 @@
+/* I want the font to be consistent across the entire webpage */
 * {
-    font-family: arial;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* the website background will be yellow on small screens*/
+@media only screen and (max-width: 768px) {
+    * {
+        background-color: yellow;
+    }
+}
+
+/*small margin around body*/
 body {
-    margin: 0;
+    margin: 1% 1% 1% 1%;
 }
 
-.row {
-    margin: 0;
+fieldset {
+    border-style: groove;
+    border-color: darkslategrey;
+    border-width: 10px;
+    border-radius: 1cm;
+    width: 35vmin;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.column {
-    margin: 0;
+/*fix the top links*/
+#top {
+    position: fixed;
+    text-align: right;
 }
 
-#characters {
-    margin: 0;
+footer {
+    position: static;
 }
 
 p {
-    margin: 0;
+    max-width: 50vh;
+    max-height: 50vw;
 }
 
-p::hover {
-    margin: 0;
+/* put a small margin around pictures*/
+picture {
+    display: inline-block;
+    margin: 1mm;
+    padding: 5px 5px 5px 5px;
 }
 
-a[target = href] {
-    margin: 0;
+/*hide asides on hover*/
+aside:hover {
+    display: none;
 }
 
-li > a {
-    margin: 0;
+/*center headers on hover*/
+h3:hover {
+    text-align: center;
 }
 
+/*clicking links adds yellow background*/
+a[href]:active {
+    background-color: yellow;
+}
+
+/*small margin around audio and video*/
 audio, video {
-    margin: 0;
+    margin: 1% 1% 1% 1%;
 }
 
-header > h2 {
-    margin: 0;
-}
-
-header + h2 {
-    margin: 0;
+hr + h3 {
+    color: darkslategray;
 }
 
 h3 ~ p {
-    margin: 0;
+    color: blue;
 }
 
-p.intro {
-    margin: 0;
+/*underline the first header of an article*/
+article h2 {
+    text-decoration: underline;
 }
+
+/*flex container and items*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex-container > div {
+    background-color: teal;
+    flex-shrink: 3;
+}
+
+
+/*grid container and items*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.grid1 {
+    justify-self: center;
+    align-self: center;
+}
+
+.grid2 {
+    align-content: stretch;
+}
+
+.grid3 {
+    justify-self: center;
+    align-self: center;
+}
+
+
